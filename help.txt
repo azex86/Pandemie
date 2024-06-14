@@ -1,0 +1,56 @@
+By aze
+Pandemie is a C++/Python program to simulate pandemics.
+
+Pandemie --[options] [rule]=[value] ...
+
+Options:
+	-h, --help            show this help message and exit
+
+	--save [file(.csv)]=> define a name of the file to save the statistics
+	--nbthread [int] => define the number of thread to use to execute the calculations not usable
+	--show => show the simulation
+	--show-chunk => show the chunks
+	--stop-when-pandemic-end => stop the simulation when the pandemic is over
+	--no-stop-when-pandemic-end => do not stop the simulation when the pandemic is over
+	--no-show => do not show the simulation
+	--no-graph => do not show the graph
+	--graph  => show the graph
+	--graph-script [file(.py)] : python main.py => define the command of the script to use to show the graph
+	--size-map [int] [int] : 1000 1000 => define the size of the map
+
+	rules available : 
+		wait_time, live, counter[All], counter[Infected], counter[Normal], counter[Recovered], counter[Died], rules[infection_time], rules[infection_range], rules[infection_rate], rules[immunity_time]
+		
+		wait_time : 50 : time to wait between each iteration in milliseconds
+		live : 2 : 1 to continue execution, 2 to pause, 0 to stop
+		counter[All] : default 10000 : total number of people the sum of all others counter should be counter[All]
+		counter[Infected] : 1 : number of infected people
+		counter[Normal] : 9999 : number of healthy people
+		counter[Recovered] : 0 : number of people healed
+		counter[Died] : 0 : number of people dead
+		rules[infection_time] : 300 : time to heal after infection
+		rules[infection_range] : 2 : contamination distance
+		rules[infection_rate] : 1 : contamination probability
+		rules[immunity_time] : 900 : time to lose immunity
+		rules[quarantine] : 0 : probability of confinement
+		rules[confinement] : 0 : probability of confinement
+		rules[quarantine_time] : 15 : time between infection and quarantine
+		walls : list of walls in the form of a list [wall,,,,] and wall in the form pos.x:pos.y:size.x:size.y
+
+Instances:
+
+	defaut settings:
+		Pandemie.exe --show --graph --save simulation.csv --size-map 1000 1000 wait_time=50 live=2 counter[All]=10000 counter[Infected]=1 counter[Normal]=9999 counter[Recovered]=0 counter[Died]=0 rules[infection_time]=300 rules[infection_range]=2 rules[infection_rate]=1 rules[immunity_time]=900 rules[quarantine]=0 rules[confinement]=0 rules[quarantine_time]=15 walls=[]
+
+	wave simulation
+		Pandemie.exe rules[infection_time]=300 rules[immunity_time]=600 rules[infection_rate]=0.3
+
+	simulation with walls
+		Pandemie.exe walls=[0:475:400:50,600:475:400:50]
+		Pandemie.exe --walls 0:475:400:50,600:475:400:50
+	confinment simulation
+		Pandemie.exe rules[infection_rate]=0.5	rules[confinement]=0.9	
+
+	quarantine simulation
+		Pandemie.exe rules[quarantine]=0.99
+

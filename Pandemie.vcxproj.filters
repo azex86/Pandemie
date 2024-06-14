@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Fichiers de ressources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{e931180c-b8bf-45b3-b637-4c149905abe1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\Fichiers sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="core\Fichiers d%27en-tête">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cpp\Chunk.cpp">
+      <Filter>core\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\graph.cpp">
+      <Filter>core\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\Main.cpp">
+      <Filter>core\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\Vecteur.cpp">
+      <Filter>core\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\Simulation.cpp">
+      <Filter>core\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\Entity.cpp">
+      <Filter>core\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\sleep.cpp">
+      <Filter>core\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\Window.cpp">
+      <Filter>core\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\Lutin.cpp">
+      <Filter>core\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\Wall.cpp">
+      <Filter>core\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\Person.cpp">
+      <Filter>core\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\input.cpp">
+      <Filter>core\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\str.cpp">
+      <Filter>core\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\help.cpp">
+      <Filter>core\Fichiers sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cpp\Chunk.hpp">
+      <Filter>core\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\graph.h">
+      <Filter>core\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\config.h">
+      <Filter>core\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\Simulation.hpp">
+      <Filter>core\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\sleep.h">
+      <Filter>core\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\Vecteur.hpp">
+      <Filter>core\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\Entity.hpp">
+      <Filter>core\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\Window.hpp">
+      <Filter>core\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\Lutin.hpp">
+      <Filter>core\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\Wall.hpp">
+      <Filter>core\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\Person.hpp">
+      <Filter>core\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\input.h">
+      <Filter>core\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\str.h">
+      <Filter>core\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp\help.h">
+      <Filter>core\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="help.txt">
+      <Filter>Fichiers de ressources</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
